@@ -1,95 +1,216 @@
-.landingPage{
+.portfolio{
     font-family: 'Tenor Sans', sans-serif;
   }
   
-  .first-name, .last-name{
-    margin-left: 3%;
-    font-size: 200px;
+
+.pg-landingPage{
+  margin-top: 10%;
+}
+
+.sup-title{
+  font-size: 40px;
+  font-family: "Forum", serif;
+  text-align: center;
+}
+
+
+.title-nm{
+  font-size: 190px;
+  text-align: center;
+}
+
+.title-fn, .title-ln{
+  margin: 0px;
+}
+
+.sub-title{
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+}
+
+.social-icons{
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-socials{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.pg-about{
+  margin-top: 25%;
+}
+
+.about-sup-title{
+  font-size: 150px;
+  margin-left: 5%;
+}
+
+.about{
+  width: 65%;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.about-label{
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+
+.about-desc{
+  margin-bottom: 5%;
+  font-size: 45px;
+}
+
+.about-desc-2{
+  margin-bottom: 2%;
+  font-size: 20px;
+}
+
+.about-curr-roles{
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.curr-role-1, .curr-role-2{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+
+.about-add{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.add-interest{
+  display: flex;
+  font-size: 15px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.ast-img{
+  width: 30px;
+  height: 30px;
+}
+
+.add-int-body{
+  width: 300px;
+  padding-left: 10px;
+}
+
+.ast-img{
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.pg-accolades{
+  width: 65%;
+  margin: auto;
+  margin-top: 25%;
   
-  .last{
-    display: flex;
-    align-items: center;
-  }
-  
-  .desc{
-    margin-top: 3%;
-    font-size: 20px;
-    margin-left: 2%;
-  }
-  
-  .hr{
-    margin-top: 10%;
-    display: block;
-    height: 3px;
-    border-top: black 3px solid;
-    width: 300px;
-  }
-  
-  .newsletter{
-    margin-left: 10%;
-    margin-top: 3px;
-    height: 80%;
-    width: auto;
-  }
-  
-  .page-list{
-    display: flex;
-    font-size: 20px;
-    margin-top: 5%;
-    width: 100vw;
-    justify-content: center;
-  }
-  
-  .page-list-box{
-    width: 300px;
-    height: 200px;
-    font-family: 'Tenor Sans', sans-serif;
-  }
-  
-  .page-list-num{
-    font-size: 40px;
-    cursor: pointer;
-  }
+}
+
+.acco-label{
+  margin-bottom: 7%;
+  font-size: 20px;
+
+}
+
+.acco-nums{
+  margin-bottom: 7%;
+}
+
+.acco-nums-1,.acco-nums-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.num{
+  font-size: 110px;
+}
+
+.num-context{
+  width: 400px;
+  font-size: 20px;
+}
+
+.cert-label{
+  margin-bottom: 7%;
+  font-size: 20px;
+}
+
+.certs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-img{
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.pg-footer{
+  width: 85%;
+  margin: auto;
+  margin-top: 25%;
+}
+
+.footer-sup-title{
+  font-size: 25px;
+  align-items: center;
+}
+
+.footer-title{
+  font-size: 150px;
+}
+
+.social{
+  margin-right: 100px;
+}
+
+.footer-sub-title{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+.footer-creds{
+  margin-top: 25%;
+  font-size: 25px;
+}
 
   @media only screen and (max-width: 480px) {
     /* styles for devices with a maximum screen width of 480px */
-    .first-name{
-      margin-left: 5%;
-      padding-top: 5%;
-      font-size: 60px;
-    }
-
-    .last-name{
-      margin-left: 5%;
-      font-size: 60px;
-      padding-top: 4%;
-    }
-
-    .desc{
-      margin-top: 10%;
-      font-size: 20px;
-      margin-left: 5%;
-    }
-
-    .last{
-      display: block;
-    }
-
-    .newsletter{
-      margin-left: 5%;
-      margin-top: 3px;
-      height: 50%;
-      width: auto;
-    }
-
-    .hr{
-      display: none;
-    }
-
-    .page-list{
-      display: none;
-    }
+   
     
   }
   

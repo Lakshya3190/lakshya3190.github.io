@@ -42,11 +42,40 @@ function App(){
     return (      
       <div style = {{margin: "0px"}} className = 'App'>
 
-        Hello!<br/><br/>
+          {
+            enableTransition 
+            ?
+            (<div>
+              <CSSTransition
+                in = {enableTransition}
+                timeout = {1500}
+                classNames = "loaderTransition">
+                <Trans duration = {enableTransition}/>
+              </CSSTransition>
+            </div>)  
+          :
+            (<div>
+               <div className = 'menu-top'>
+                  <div onClick = {onClickTransition} className = 'menu-op'>
+                    Portfolio '24
+                  </div>
 
-        I am currently revamping my portfolio and will be back soon.<br/>
+                  <div className = 'menu-op'>
+                    <a style={{ textDecoration: 'none', color: 'black' }} href=''>
+                      Get in Touch
+                    </a>
+                  </div>
+                </div>
+            </div>)
+        }
 
-        Meanwhile, please find my resume <a href = "https://drive.google.com/file/d/1Dj8Bixd5GfOonz9ptyXTQ9eXB4v3kAz5/view?usp=sharing">here!</a>
+        <TransitionGroup>
+        <CSSTransition classNames='fade' key={loc.key}>
+        <Routes style = {{margin: "0px"}}>
+          <Route style = {{margin: "0px"}} path="/" element={<Landingpage/>}/>
+        </Routes>
+        </CSSTransition>
+        </TransitionGroup>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>

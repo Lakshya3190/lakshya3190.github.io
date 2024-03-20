@@ -7,34 +7,22 @@
   margin-top: 10%;
 }
 
-.menu-top, .menu-bottom{
+.menu-top{
+  top: 4%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
   z-index: 10;
   position: fixed;
   font-size: 20px;
   font-family: 'Tenor Sans', sans-serif;
   cursor: pointer;
+  margin-right: 2%;
 }
 
-.menu-top{
-  top: 4%;
-  right: 2%;
-}
-
-.menu-bottom{
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  bottom: 3%;
-  right: 2%;
-}
-
-.op-blog{
-  margin-left: 5%;
-}
-
-.op-contact{
-  margin-right: 5%;
-  padding: 3%;
+.menu-op{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .loaderTransition-enter{
